@@ -1,21 +1,44 @@
-Task:
-Migrasikan Web Pokedex yang sudah di pada styling-chellenge ke dalam react Project.
+Membuat Website Pokemon Dengan Requirement:
+1. Home Page
+   Memiliki minimal 3 buah content/banner.
+2. Pokemon Page
+   Menampilkan list pokemon dari fetching API.
+3. About Team
+   Menampilkan informasi tim berupa:
+ nama, 
+ photo, 
+ background, dan 
+ experience (optional)
+4. Detail Pokemon
+   Menampilkan detail pokemon dari fetching API.
 
-Tambahkan navigasi pada Navigari Bar.
-Path '/' untuk menu Home.
-Path '/pokemon' untuk menu Pokemon. Menu ini digunakan untuk menampilkan list pokemon.
-Path '/about' untuk menu About Me. Menu ini harus memiliki 4 bagian yaitu:
-a. Foto diri (minimal 1).
-b. Deskripsi diri
-c. Background pendidikan
-d. Pengalaman
 
-Rules:
 
-Dalam setiap page harus terdapat Navigasi Bar dan Footer.
-Foto diri menggunakan internal source.
-Menerapkan konsep display.
-Dikumpulkan paling lambat hari Minggu, 24 Juni 2022 pukul 18.00 WIB.
 
-Note:
-Setelah membuah nama branch silahkan tulihkan perintah "npx create-react-app ." atau "npx create-react-app@latest ."
+Requirement Tambahan Wajib:
+1. Menampilkan Navbar dan Footer di setiap page.
+2. Menggunakan state management Redux.
+3. Menggunakan konsep navigation.
+
+
+Requirement Tambahan Point Plus:
+1. Menggunakan Middleware Redux (Redux Saga)
+2. Customize View Pokemon (Pokemon dan Detail Page)
+3. Pagination (Pokemon dan Detail Page)
+4. Fitur Search Pokemon (Pokemon dan Detail Page)
+5. Favorite Menu (Add / Delete Favorite) (Tidak bisa menambahkan pokemon yang sama)
+6. Caching Data (Redux Persist)
+7. Page untuk Not Found (http://localhost:3000/blablabla)
+
+
+
+Teknis:
+Setiap kelompok wajib menggunakan repositori pribadi.
+Urutan Presentasi akan diumumkan pada hari Jumat.
+
+API:
+GET https://pokedexbackend.herokuapp.com/pokemon (All Pokemon)
+GET https://pokedexbackend.herokuapp.com/pokemon/:id (Detail Pokemon)
+
+Example: 
+https://pokemon-ke.netlify.app/pokemon
