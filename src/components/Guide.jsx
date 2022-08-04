@@ -6,9 +6,9 @@ const Guide = () => {
     <div>
       <section id="topics">
         <div className="container-md my-5">
-          <div className="text-center">
+          <div className="text-center text-light">
             <h2>How To Play</h2>
-            <p className="lead text-muted">A quick steps to enjoy the game</p>
+            <p className="lead">A quick steps to enjoy the game</p>
           </div>
           <div className="row justify-content-around align-items-center">
             {/* //? Accordion */}

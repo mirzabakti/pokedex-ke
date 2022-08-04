@@ -18,17 +18,17 @@ const NavBar = () => {
           <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link " to="/">
+                <Link className="nav-link text-light" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/pokemon">
+                <Link className="nav-link text-light" to="/pokemon">
                   Pokemon
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/aboutme">
+                <Link className="nav-link text-light" to="/aboutme">
                   About Me
                 </Link>
               </li>

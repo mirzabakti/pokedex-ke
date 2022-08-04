@@ -8,7 +8,7 @@ const AboutMe = () => {
         <div className="mt-5 py-6 container-fluid px-xxl-8">
           <div className="row">
             <div className="col-lg-6">
-              <div className="lc-block mb-4 mb-lg-0 lh-lg">
+              <div className="lc-block mb-4 mb-lg-0 lh-lg text-light">
                 <div editable="rich">
                   <h1 className="display-5">Hi, I'm Mirza Bakti Sukaryana</h1>
                   <p></p>

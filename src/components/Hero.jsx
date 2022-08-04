@@ -8,14 +8,14 @@ const Hero = () => {
       <section id="intro">
         <div className="container-lg py-5">
           <div className="row justify-content-center align-items-center">
-            <div className="col-md-5 text-center text-md-start">
+            <div className="col-md-5 text-center text-md-start text-light">
               <h1>
                 <div className="display-4">
                   Pokemon Battle <br />
                   is Come!
                 </div>
               </h1>
-              <p className="lead my-4 text-muted">
+              <p className="lead my-4">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quaerat veritatis dolorum, iure tenetur ad vero saepe velit quidem distinctio at exercitationem veniam quibusdam ipsum nostrum nulla alias. Velit, laudantium?
               </p>
             </div>
@@ -29,14 +29,14 @@ const Hero = () => {
             <div className="col-md-5 text-center d-none d-md-block">
               <img className="img-fluid rounded" src={Image2} alt="sunnygo" />
             </div>
-            <div className="col-md-5 text-center text-md-start">
+            <div className="col-md-5 text-center text-md-start text-light">
               <h1>
                 <div className="display-4">
                   Free Stuff <br />
                   Special For You!
                 </div>
               </h1>
-              <p className="lead my-4 text-muted">
+              <p className="lead my-4">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quaerat veritatis dolorum, iure tenetur ad vero saepe velit quidem distinctio at exercitationem veniam quibusdam ipsum nostrum nulla alias. Velit, laudantium?
               </p>
             </div>
