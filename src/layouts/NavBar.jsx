@@ -1,11 +1,11 @@
-import React from "react";
-import Logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import React from 'react';
+import Logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-md navbar-light">
+      <nav className="navbar navbar-expand-md navbar-light fixed-top">
         <div className="container-xxl">
           <Link to="/">
             <img src={Logo} alt="Pokemon" className="img-fluid w-50" />
