@@ -5,7 +5,7 @@ import Footer from "./layouts/Footer";
 import NotFound from "./pages/NotFound";
 import AboutMe from "./pages/AboutMe";
 import Pokemon from "./pages/Pokemon";
-
+import './App.css';
 function App() {
   return (
     <div>
