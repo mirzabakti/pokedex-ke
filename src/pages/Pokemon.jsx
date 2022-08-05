@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import SearchBar from "../components/SearchBar";
+import Pagination from "../components/Pagination";
 
 function Pokemon() {
   const [data, setData] = useState([]);
@@ -53,9 +54,10 @@ function Pokemon() {
         ) : (
           <div>Pokemon Not Found</div>
         )}
+        <Pagination />
       </div>
 
-      {/* <Pagination /> */}
+      
     </div>
   );
 }
