@@ -1,8 +1,17 @@
-import { useState } from 'react';
+// import { useState, useEffect } from 'react';
 import ReactPaginate from 'react-paginate';
 // import { Pagination } from 'react-bootstrap'
 
 function Paginate() {
+
+    // const [items, setItems] = useState ([]);
+
+    // useEffect(() => {
+
+    //     axios
+    //     .get('')
+    // }, [])
+
     const handlePageClick = (data) => {
         console.log(data.selected);
         }
