@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import SearchBar from "../components/SearchBar";
+import DetailPokemon from "../components/DetailPokemon";
 
 function Pokemon() {
   const [data, setData] = useState([]);
@@ -23,7 +24,7 @@ function Pokemon() {
 
   // function Spin(pictureBack){
   //   const [spin, setSpin] = useState('')
-    
+
   //   const Spinning = () => {
   //       setSpin('')
   //   }
@@ -32,21 +33,20 @@ function Pokemon() {
   return (
     <div className="container">
       <SearchBar />
-      
+      <DetailPokemon />
       <div>
         {data?.length ? (
           <div className="row">
             {data?.map((el, idx) => {
               return (
                 <div key={idx} className="col-xl-2  col-sm-3 lc-block bg-white rounded shadow text-center m-3 p-3">
-                  
                   <div className="flip-box">
                     <div className="flip-box-inner">
                       <div className="flip-box-front">
                         {/* <button > */}
-                            <img src={el?.pictureBack} alt="pokemon" className="img-fluid card-img-top " />
+                        <img src={el?.pictureBack} alt="pokemon" className="img-fluid card-img-top " />
                         {/* </button> */}
-                        </div>
+                      </div>
                       <div className="flip-box-back">
                         <img src={el?.pictureFront} alt="pokemon" className="img-fluid card-img-top " />
                         apa aja
@@ -54,9 +54,10 @@ function Pokemon() {
                     </div>
                   </div>
 
-
                   <div>{el?.name.toUpperCase()}</div>
-                  <button className="btn btn-secondary">Detail</button>
+                  <button type="button" className="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Detail
+                  </button>
                 </div>
               );
             })}

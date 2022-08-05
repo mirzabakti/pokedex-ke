@@ -9,6 +9,8 @@ const Home = () => {
       <Carousel />
       <Hero />
       <Guide />
+
+      
     </div>
   );
 };
