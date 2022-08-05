@@ -4,8 +4,14 @@ import SearchBar from "../components/SearchBar";
 import DetailPokemon from "../components/DetailPokemon";
 import ListPokemon from "../components/ListPokemon";
 
+import {useSelector} from "react-redux";
+
 function Pokemon() {
   const [data, setData] = useState([]);
+
+  const favPokemons = useSelector((store) => store.favPokemon.data)
+
+  console.log(favPokemons)
 
   useEffect(() => {
     axios

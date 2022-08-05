@@ -1,6 +1,15 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { addFavPokemon } from "../slice/FavPokemonSlice";
 
 const ListPokemon = ({ data }) => {
+  const dispatch = useDispatch(); 
+  const handleClick = (el) => {
+    // console.log(el);
+
+    dispatch(addFavPokemon(el))
+  };
+
   return (
     <div>
       {data?.length ? (
@@ -22,8 +31,11 @@ const ListPokemon = ({ data }) => {
                 </div>
 
                 <div>{el?.name.toUpperCase()}</div>
-                <button type="button" className="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" className="btn btn-secondary me-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Detail
+                </button>
+                <button type="button" class="btn btn-primary" onClick={() => handleClick(el)}>
+                  Add Favorite
                 </button>
               </div>
             );

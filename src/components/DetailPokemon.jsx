@@ -16,6 +16,7 @@ const DetailPokemon = () => {
             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
               Close
             </button>
+            <button type="button" class="btn btn-primary">Add Favorite</button>
           </div>
         </div>
       </div>
