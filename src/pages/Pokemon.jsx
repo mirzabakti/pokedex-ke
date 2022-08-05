@@ -21,14 +21,6 @@ function Pokemon() {
       });
   }, []);
 
-  // function Spin(pictureBack){
-  //   const [spin, setSpin] = useState('')
-    
-  //   const Spinning = () => {
-  //       setSpin('')
-  //   }
-  // }
-
   return (
     <div className="container">
       <SearchBar />
@@ -43,13 +35,10 @@ function Pokemon() {
                   <div className="flip-box">
                     <div className="flip-box-inner">
                       <div className="flip-box-front">
-                        {/* <button > */}
                             <img src={el?.pictureBack} alt="pokemon" className="img-fluid card-img-top " />
-                        {/* </button> */}
                         </div>
                       <div className="flip-box-back">
                         <img src={el?.pictureFront} alt="pokemon" className="img-fluid card-img-top " />
-                        apa aja
                       </div>
                     </div>
                   </div>
@@ -65,6 +54,8 @@ function Pokemon() {
           <div>Pokemon Not Found</div>
         )}
       </div>
+
+      {/* <Pagination /> */}
     </div>
   );
 }
